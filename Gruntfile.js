@@ -1,6 +1,7 @@
 'use strict';
 
 const loadNpmTasks = require('load-grunt-tasks');
+const liveReload = require('connect-livereload')();
 
 module.exports = (grunt) => {
 	loadNpmTasks(grunt);
@@ -39,14 +40,17 @@ module.exports = (grunt) => {
 		},
 		watch: {
 			clientJs: {
+				options: { livereload: true },
 				files: [ './client/**/*.js', './lib/**/*.js' ],
 				tasks: [ 'clean:clientJs', 'browserify' ]
 			},
 			clientSass: {
+				options: { livereload: true },
 				files: [ './client/sass/**/*.scss' ],
 				tasks: [ 'clean:clientCss', 'sass' ]
 			},
 			clientHtml: {
+				options: { livereload: true },
 				files: [ './client/**/*.html' ],
 				tasks: [ 'clean:clientHtml', 'htmlmin' ]
 			},
@@ -69,12 +73,14 @@ module.exports = (grunt) => {
 		connect: {
 	    server: {
 	      options: {
+					livereload: true,
 	        port: 8080,
 	        hostname: '*',
 					base: './dist',
-	        onCreateServer: function(server, connect, options) {
-
-	        }
+					middleware: function (connect, options, middlewares) {
+		        middlewares.unshift(liveReload);
+						return middlewares;
+		      }
 	      }
 	    }
 	  }

@@ -19,7 +19,25 @@ module.exports = (grunt) => {
 				}
 			}
 		},
+		imagemin: {
+	    client: {
+	      options: {
+	        optimizationLevel: 3,
+	      },
+	      files: [{
+	        expand: true,
+					src: ['**/*.{png,gif,jpg}'],
+					dest: './dist/images',
+					cwd: './client/images'
+	      }]
+	    },
+		},
 		sass: {
+			options: {
+				loadPath: [
+					'./node_modules/bootstrap-sass/assets/stylesheets/'
+				]
+			},
 	    dist: {
 	      options: {
 	        style: 'expanded'
@@ -34,6 +52,7 @@ module.exports = (grunt) => {
 	    }
 	  },
 		clean: {
+			clientImages: [ './dist/images' ],
 			clientCss: [ './dist/styles' ],
 			clientJs: [ './dist/javascript' ],
 			clientHtml: ['./dist/**/*.html' ]
@@ -52,7 +71,7 @@ module.exports = (grunt) => {
 			clientHtml: {
 				options: { livereload: true },
 				files: [ './client/**/*.html' ],
-				tasks: [ 'clean:clientHtml', 'htmlmin' ]
+				tasks: [ 'clean:clientHtml', 'imagemin:client', 'htmlmin' ]
 			},
 			server: {
 				files: ['./server/**/*.js', './lib/**/*.js' ],
@@ -87,7 +106,7 @@ module.exports = (grunt) => {
 	});
 
 	grunt.registerTask('default', ['connect', 'build', 'watch']);
-	grunt.registerTask('build:client', ['clean', 'browserify', 'sass', 'htmlmin']);
+	grunt.registerTask('build:client', ['clean', 'browserify', 'sass', 'imagemin', 'htmlmin']);
 	grunt.registerTask('build', ['build:client']);
 
 };

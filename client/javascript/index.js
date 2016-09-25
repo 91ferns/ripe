@@ -20,7 +20,7 @@ let counter = 0;
 class TestComponent extends React.Component {
 	render() {
 		return (
-			<button onClick={() => this.props.onClick(counter++)}>
+			<button className='btn btn-default' onClick={() => this.props.onClick(counter++)}>
 				Hey Button {this.props.text}
 			</button>
 		);

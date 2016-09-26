@@ -158,10 +158,6 @@ main {
 
 }
 
-.align-center {
-	text-align: center;
-}
-
 .btn-pink {
 	@include button-variant(white, $theme-pink, $theme-pink);
 }
@@ -173,8 +169,7 @@ main {
 #homepage-main {
 	padding: 2em 0 3.5em;
 	p {
-		font-size: 1.6em;
-    padding-left: 5px;
+		font-size: 1.3em;
 	}
   h2 {
     margin-top: 40px;
@@ -187,8 +182,7 @@ main {
   }
 }
 
-#homepage-employers {
-  background-color: #ff6c82;
+.triangle-wrapper {
   color: white;
   text-align: center;
   font-size: 1.25em;
@@ -196,17 +190,36 @@ main {
   position: relative;
 }
 
-#triangle-down {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 50px solid #ff6c82;
-    margin-left: auto;
-    margin-right: auto;
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#homepage-category {
+#homepage-employers {
+  .triangle-down {
+    border-top: 50px solid #ff6c82;
+  }
+
+  .triangle-wrapper {
+    background-color: #ff6c82;
+  }
+}
+
+#homepage-employees {
+  .triangle-down {
+    border-top: 50px solid #50b98b;
+  }
+
+  .triangle-wrapper {
+    background-color: #50b98b;
+  }
+}
+
+.homepage-category {
   text-align: center;
   font-size: 1.25em;
   padding-bottom: 60px;
@@ -261,23 +274,4 @@ main {
   -webkit-border-radius: 75px;
   border-radius: 75px;
   font-size: 1.3em;
-}
-
-#homepage-employees {
-  background-color: #50b98b;
-  color: white;
-  text-align: center;
-  font-size: 1.25em;
-  padding-bottom: 60px;
-  position: relative;
-}
-
-#triangle-down-green {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 50px solid #50b98b;
-    margin-left: auto;
-    margin-right: auto;
 }

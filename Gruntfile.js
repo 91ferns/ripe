@@ -86,6 +86,8 @@ module.exports = (grunt) => {
 	      },
 	      files: {
 	        './dist/index.html': './client/index.html',
+					'./dist/employees.html': './client/employees.html',
+					'./dist/employers.html': './client/employers.html',
 	      }
 	    }
 	  },

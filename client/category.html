@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<link href="styles/main.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<title>Ripe</title>
+	</head>
+
+	<body>
+		<!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+						<img src="images/logo.png">
+					</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="category-main">
+      <div class="container-liquid">
+        <div class="row">
+          <h2>Marketing Template</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h3>Hello</h3>
+          <p>Below you can customize the questions you wish to recieve feedback on. The Referee will give a score of</p>
+          <p>between 1 and 6. 1 being poor 3 being average and 6 being exceptional.</p>
+          <form action="marketing-form" class="category-form">
+            <p>Applicant's Name <input class="normal" type="text" name="name" placeholder="Jane Doe"></p>
+            <p>Job Title <input class="normal" type="text" name="jobtitle" placeholder="Marketing Specialist"></p>
+            <hr>
+            <p>Category <input class="normal" type="text" name="category" placeholder="Organizational Skills"></p>
+            <p>Question 1 <input class="normal" type="text" name="question1" placeholder="How is the applicant's attention to detail?"></p>
+            <p>+ Add Question</p>
+            <p>Comments <textarea class="comments" type="textarea" name="comments" rows="3" cols="60" placeholder="The referee will have the ability to write comments here"></p>
+            <hr class="hrfix">
+            <p>+ Add Another Category</p>
+            <hr>
+            <input class="submit" type="submit" value="Next">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="top-footer">
+        <nav class="navbar navbar-default navbar-static-bottom">
+          <div class="container">
+            <div id="footer-nav">
+              <ul class="nav navbar-nav">
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">What You Get</a></li>
+                <li><a href="employers.html">Employer</a></li>
+                <li><a href="employees.html">Employee</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div> <!-- /.top-footer-->
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="col-md-4">
+            <a href="termsandconditions.html">Terms and Conditions</a> | <a href="privatepolicy.html">Private Policy</a>
+          </div>
+          <div class="col-md-4">
+            <a href="index.html"><img class="img-responsive" src="images/logo.png"></a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">Hello@Riperreference.com</a>
+          </div>
+        </div>
+      </div> <!-- /.bottom-footer -->
+    </footer>
+
+    <script src="javascript/app.js"></script>
+    </body>
+    </html>

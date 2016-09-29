@@ -336,3 +336,115 @@ main {
     }
   }
 }
+
+.final-steps-main {
+  text-align: center;
+  h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  p {
+    font-size: 1.35em;
+    padding: 0px;
+  }
+  .padding {
+    padding-bottom: 20px;
+  }
+  .url {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    .url-text {
+      margin-left: 20px;
+      margin-bottom: -7px;
+      border: 1px solid black;
+      padding-left: 5px;
+      border-radius: 20px;
+    }
+  }
+  strong {
+    text-transform: uppercase;
+  }
+}
+.linkedin-main {
+  text-align: center;
+  h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  p {
+    font-size: 1.35em;
+    padding: 0px;
+  }
+  .padding {
+    padding-top: 20px;
+  }
+  a {
+    display:inline-block;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}
+.questionnaire-main {
+  h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    text-transform: none;
+  }
+  .padding {
+    padding-top: 15px;
+  }
+  p {
+    margin: auto;
+    font-size: 1.3em;
+    strong {
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+  }
+  .ranking {
+    counter-reset: item;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    li {
+      font-size: 1.3em;
+      list-style-type: none;
+      counter-increment: item;
+      span {
+        padding-left: 52px;
+      }
+    }
+    li:before {
+      font-weight: bold;
+      padding-right: 40px;
+      content: counter(item) "";
+    }
+  }
+
+  .questionnaire {
+    p {
+      padding-bottom: 10px;
+      strong {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+    .normal {
+      border: 1px solid black;
+      padding: 5px;
+      border-radius: 20px;
+      width: 25%;
+    }
+    .spacing {
+      margin-left: 30px;
+    }
+    .large {
+      width: 80%;
+      border: 1px solid black;
+      padding: 5px;
+      height: 5.5%;
+      border-radius: 20px;
+    }
+  }
+}

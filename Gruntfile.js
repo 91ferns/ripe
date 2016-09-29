@@ -93,6 +93,9 @@ module.exports = (grunt) => {
 					'./dist/termsandconditions.html': './client/termsandconditions.html',
 					'./dist/privatepolicy.html': './client/privatepolicy.html',
 					'./dist/category.html': './client/category.html',
+					'./dist/finalsteps.html': './client/finalsteps.html',
+					'./dist/linkedin.html': './client/linkedin.html',
+					'./dist/questionnaire.html': './client/questionnaire.html',
 	      }
 	    }
 	  },

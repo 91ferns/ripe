@@ -1,0 +1,154 @@
+<html>
+	<head>
+		<link href="styles/main.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<title>Ripe</title>
+	</head>
+
+	<body>
+		<!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+						<img src="images/logo.png">
+					</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+		<div class="questionnaire-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<h2>Hi Ricky</h2>
+						<p>Great to have you here. We're just going to ask you a few questions on Jane Doe to</p>
+						<p>understand who / what / how they are in certain situations. Your feedback is </p>
+						<p>incredibly important so please do answer thoughtfully and honestly.</p>
+						<p class="padding">Score between 1 and 6. 1 being <strong>Poor</strong>, 3 being <strong>Average</strong> and 6 being <strong>Exceptional</strong>. Giving</p>
+						<p>a 6 is like saying they're the Michael Phelps of this skill - practically unbeatable.</p>
+						<ol class="ranking">
+							<p><li>Very Poor: Cannot complete at all or very poorly </p></li>
+							<p><li>Poor: Completes, but poorly </p></li>
+							<p><li>Average: Completes at a satistfactory but basic level</p></li>
+							<p><li>Good: Alwats delivers on and sometimes over expectation</p></li>
+							<p><li>Great: Frequently delivers over expectation</p></li>
+							<p><li>Exceptional: Delivers at a level you rate as one of, if not the</p>
+								<span class="indent">best you've encountered</span>
+						</ol>
+						<form action="questionnaire-form" class="questionnaire">
+							<p><strong>Applicant's Name</strong></p>
+							<p>
+								<input class="normal" type="text" name="fname" placeholder="First Name">
+								<input class="normal spacing" type="text" name="lname" placeholder="Last Name">
+							</p>
+							<p><strong>How do you know this person?</strong></p>
+							<p><textarea class="large" type="textarea" col="120" row="1" name="reference" placeholder="Coworker at The Best Company Inc."></p>
+							<hr>
+							<p><strong>Leadership Skills</strong></p>
+							<ol class="rating">
+								<li>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</p>
+								</li>
+								<li>
+									<p>Lorem ipsum dolor elit, sed do eiusmod tempor incididunt?</p>
+								</li>
+								<li>
+									<p>Dolor elit, sed do eiusmod tempor incididunt Lorm ipsum edur consector ne?</p>
+								</li>
+							</ol>
+							<p><textarea type="textarea" col="100" name="leadership-comments" row="4" col="120" placeholder="Comments..."></p>
+							<hr>
+							<p><strong>Technical Ability</strong></p>
+							<ol class="rating">
+								<li>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt?</p>
+								</li>
+								<li>
+									<p>Lorem ipsum dolor elit, sed do eiusmod tempor incididunt?</p>
+								</li>
+								<li>
+									<p>Dolor elit, sed do eiusmod tempor incididunt Lorm ipsum edur consector ne?</p>
+								</li>
+							</ol>
+							<p><textarea type="textarea" col="100" name="technical-comments" row="4" col="120" placeholder="Comments..."></p>
+							<hr>
+							<p><strong>General Comments / Further Feedback</strong></p>
+							<p><textarea type="textarea" col="100" name="feedback-comments" row="4" col="120" placeholder="Comments..."></p>
+							<p><strong>Your Contact Info</strong></p>
+							<p>Don't mind the employer contacting you to discuss further></p>
+							<p>Please enter fields. If not, just leave blank.</p>
+							<p>
+								<input type="text" name="email" placeholder="Email Address">
+								<input type="text" name="phone" placeholder="Phone">
+							</p>
+							<input type="submit" class="reference-submit" value="Submit Reference">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    <footer class="footer">
+      <div class="top-footer">
+        <nav class="navbar navbar-default navbar-static-bottom">
+          <div class="container">
+            <div id="footer-nav">
+              <ul class="nav navbar-nav">
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">What You Get</a></li>
+                <li><a href="employers.html">Employer</a></li>
+                <li><a href="employees.html">Employee</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div> <!-- /.top-footer-->
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="col-md-4">
+            <a href="termsandconditions.html">Terms and Conditions</a> | <a href="privatepolicy.html">Private Policy</a>
+          </div>
+          <div class="col-md-4">
+            <a href="index.html"><img class="img-responsive" src="images/logo.png"></a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">Hello@Riperreference.com</a>
+          </div>
+        </div>
+      </div> <!-- /.bottom-footer -->
+    </footer>
+
+    <script src="javascript/app.js"></script>
+    </body>
+    </html>

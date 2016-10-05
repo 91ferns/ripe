@@ -43,5 +43,6 @@ jspm_packages
 # Dist
 dist
 !dist/.keep
+dist.zip
 
 .sass-cache
